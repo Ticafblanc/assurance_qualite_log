@@ -5,6 +5,45 @@ using System;
 
 public class Module_1
 {
+    private static string ReadConsole(string str)
+    {
+        System.Console.WriteLine(str);
+        str = Console.ReadLine();
+        return (str);
+    }
+    /* build a simple calculatrice */
+    public static void evaluationFormative2()
+    {
+        int a;
+        int b;
+        int Option;
+        
+        a = int.Parse(ReadConsole("veuiller entrer un entier a"));
+        b = int.Parse(ReadConsole("veuiller entrer un entier b"));
+        System.Console.WriteLine("Choisir une option de la liste suivante:");
+        System.Console.WriteLine("\t1 - Addition");
+        System.Console.WriteLine("\t2 - Soustraction");
+        System.Console.WriteLine("\t3 - Multiplication");
+        System.Console.WriteLine("\t4 - Division");
+        Option = int.Parse(ReadConsole("Votre otption? "));
+        System.Console.Write("Le resultat est: ");
+        switch (Option)
+        {
+            case 1:
+                System.Console.Write(a + " + " + b + " = " + sous(a,b));
+                break;
+            case 2:
+                System.Console.Write(a + " - " + b + " = " + somme(a,b));
+                break;
+            case 3:
+                System.Console.Write(a + " * " + b + " = " + mult(a,b));
+                break;
+            case 4:
+                System.Console.Write(a + " / " + b + " = " + div(a,b));
+                break;
+        }
+    }
+    
     /* Console.WriteLine(getTrinagleSurface(8, 2));
      * Console.WriteLine(getTrinagleSurface(12, 3));*/
     public static void exercice_1()
@@ -42,7 +81,21 @@ public class Module_1
     {
         return (a + b);
     }
+    
+    private static int sous(int a, int b)
+    {
+        return (a - b);
+    }
+    
+    private static int mult(int a, int b)
+    {
+        return (a * b);
+    }
 
+    private static int div(int a, int b)
+    {
+        return (a / b);
+    }
     public static void exercice_2()
     {
         Console.WriteLine(somme(1, 2));
