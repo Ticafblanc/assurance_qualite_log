@@ -173,13 +173,17 @@ public class Module_1
 
     /*  – Créez une classe « Person »
         – Créez une classe « Student » et une autre classe « Teacher », les deux héritent de la classe « Person ».
-        – La classe « Student » aura une méthode publique « GoToClasses », qui affichera à l’écran « Je vais aller à ma classe. ».
-        – La classe « Teacher » aura une méthode publique « Explain », qui affichera à l’écran «Début de l’explication». En plus, il aura un attribut privé « subject » de type string.
-        – La classe « Person » doit avoir une méthode « SetAge(int n) » qui indiquera la valeur de leur âge (par exemple, 15 ans).
+        – La classe « Student » aura une méthode publique « GoToClasses », qui affichera à l’écran « Je vais aller 
+        à ma classe. ».
+        – La classe « Teacher » aura une méthode publique « Explain », qui affichera à l’écran «Début de l’explication».
+         En plus, il aura un attribut privé « subject » de type string.
+        – La classe « Person » doit avoir une méthode « SetAge(int n) » qui indiquera la valeur de leur âge 
+        (par exemple, 15 ans).
         – La classe « Student » aura une méthode publique « DisplayAge » qui écrira sur l’écran « Mon age est : XX ans ».
         – Vous devez créer une autre classe de test appelée « Test » qui contiendra « Main » et:
         – Créez un objet Person et faites-lui dire « Allo ! »
-        – Créer un objet Student, définir son âge à 15 ans, faites-lui dire « Allo ! », « Je vais aller à ma classe. » et afficher son âge
+        – Créer un objet Student, définir son âge à 15 ans, faites-lui dire « Allo ! », « Je vais aller à ma classe. » 
+        et afficher son âge
         – Créez un objet Teacher, 40 ans, demandez-lui de dire « Allo ! » puis commence l’explication. */
 
     class Person
@@ -271,7 +275,8 @@ public class Module_1
         T.DisplayAge();
     }
 
-    /* Ecrire un programme en c# qui permet d'afficher les jours de la semaine (lundi, mardi,...) sachant que les jours sont codés de 1 à 7:
+    /* Ecrire un programme en c# qui permet d'afficher les jours de la semaine (lundi, mardi,...) sachant que les
+     jours sont codés de 1 à 7:
         1----------------->Lundi
         2----------------->Mardi
         ......
