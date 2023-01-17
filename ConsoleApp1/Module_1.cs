@@ -5,7 +5,7 @@ using System;
 
 public class Module_1
 {
-    private static string ReadConsole(string str)
+    public static string ReadConsole(string str)
     {
         System.Console.WriteLine(str);
         str = Console.ReadLine();
@@ -20,12 +20,14 @@ public class Module_1
         
         a = int.Parse(ReadConsole("veuiller entrer un entier a"));
         b = int.Parse(ReadConsole("veuiller entrer un entier b"));
+        
         System.Console.WriteLine("Choisir une option de la liste suivante:");
         System.Console.WriteLine("\t1 - Addition");
         System.Console.WriteLine("\t2 - Soustraction");
         System.Console.WriteLine("\t3 - Multiplication");
         System.Console.WriteLine("\t4 - Division");
         Option = int.Parse(ReadConsole("Votre otption? "));
+        
         System.Console.Write("Le resultat est: ");
         switch (Option)
         {
